@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -8,8 +9,12 @@ const Header = () => {
         React <span>Poll </span>App
       </h1>
       <nav className="header__nav">
-        <h2 className="header__questions">Questions</h2>
-        <h2 className="header__newquestions">Create Poll</h2>
+        <Link className="header__subtitle" to="/">
+          Questions
+        </Link>
+        <Link className="header__subtitle" to="/createpoll">
+          Create Poll
+        </Link>
       </nav>
     </header>
   );

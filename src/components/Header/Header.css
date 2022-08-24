@@ -21,12 +21,13 @@
   justify-content: space-around;
 }
 
-.header__container > .header__nav > h2 {
+.header__container > .header__nav > .header__subtitle {
   font-size: 1.6rem;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.header__container > .header__nav > .header__questions {
+.header__container > .header__nav > .header__subtitle:first-child {
   margin-right: 30px;
 }
 
@@ -38,7 +39,7 @@
     margin-right: 10px;
   }
 
-  .header__container > .header__nav > h2 {
+  .header__container > .header__nav > .header__subtitle {
     font-size: 1.3rem;
   }
 }
@@ -49,7 +50,7 @@
     margin-right: 8px;
   }
 
-  .header__container > .header__nav > h2 {
+  .header__container > .header__nav > .header__subtitle {
     font-size: 1.2rem;
   }
 }

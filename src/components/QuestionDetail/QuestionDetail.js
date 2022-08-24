@@ -1,8 +1,12 @@
 import React from "react";
 import "./QuestionDetail.css";
 
-const QuestionDetail = () => {
-  return <div>QuestionDetail</div>;
+const QuestionDetail = ({ name }) => {
+  return (
+    <div className="questiondetail__container">
+      <p>{name}</p>
+    </div>
+  );
 };
 
 export default QuestionDetail;
