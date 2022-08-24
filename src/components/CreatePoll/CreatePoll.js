@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import "./CreatePoll.css";
 
 const CreatePoll = () => {
-  return (
-    <div>CreatePoll</div>
-  )
-}
+  return <div>CreatePoll</div>;
+};
 
-export default CreatePoll
+export default CreatePoll;

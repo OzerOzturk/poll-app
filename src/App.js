@@ -1,5 +1,5 @@
 import "./App.css";
-import { Link, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Question from "./components/Question/Question";
 import CreatePoll from "./components/CreatePoll/CreatePoll";
@@ -16,7 +16,7 @@ function App() {
         <Route exact path="/createpoll">
           <CreatePoll />
         </Route>
-        <Route path="/question/:questionId">
+        <Route path="/questions/:questionId">
           <QuestionDetail />
         </Route>
       </Switch>

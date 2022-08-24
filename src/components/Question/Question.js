@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Question.css";
 import axios from "axios";
 import { v4 as uuid } from "uuid";
-import QuestionDetail from "../QuestionDetail/QuestionDetail";
 
 const Question = () => {
   const [questions, setQuestions] = useState([]);
@@ -26,13 +26,17 @@ const Question = () => {
   }, []);
 
   return (
-    <main className="questions__container">
+    <div className="questions__container">
       <h1 className="questions__title">Various Questions</h1>
       {questions &&
         questions.map((question, unique_id) => (
-          <QuestionDetail key={unique_id} name={question.question} />
+          <div key={unique_id}>
+            <Link to={`${question.url}`}>
+              <h3>{question.question} </h3>
+            </Link>
+          </div>
         ))}
-    </main>
+    </div>
   );
 };
 
