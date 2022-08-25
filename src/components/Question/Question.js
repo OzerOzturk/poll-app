@@ -26,17 +26,17 @@ const Question = () => {
   }, []);
 
   return (
-    <div className="questions__container">
+    <>
       <h1 className="questions__title">Various Questions</h1>
       {questions &&
         questions.map((question, unique_id) => (
-          <div key={unique_id}>
-            <Link to={`${question.url}`}>
-              <h3>{question.question} </h3>
+          <div key={unique_id} className="questions__container">
+            <Link className="questions__link" to={`${question.url}`}>
+              <p className="questions__name">{question.question} </p>
             </Link>
           </div>
         ))}
-    </div>
+    </>
   );
 };
 

@@ -7,7 +7,7 @@
 }
 
 .questiondetail__container > .questiondetail__choice {
-  margin-left: 20px;
+  margin-left: 40px;
   padding: 10px;
   font-size: 1.1rem;
   font-weight: 600;
@@ -27,4 +27,18 @@
 .questiondetail__container > .questiondetail__votes:hover {
   background-color: rgb(186, 185, 255);
   opacity: 1;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .questiondetail__container > .questiondetail__choice {
+    margin-left: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .questiondetail__container > .questiondetail__votes {
+    padding: 8px;
+  }
 }
