@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import "./QuestionDetail.css";
 
-const QuestionDetail = ({ match }) => {
+const QuestionDetail = () => {
   const [questionDetail, setQuestionDetail] = useState([]);
 
   const { questionId } = useParams();
@@ -14,7 +14,7 @@ const QuestionDetail = ({ match }) => {
         const response = await axios.get(
           `https://polls.apiblueprint.org/questions/${questionId}`
         );
-        console.log(response.data.choices);
+        //console.log(response.data.choices);
         setQuestionDetail(response.data.choices);
       } catch (error) {
         console.error(error.message);

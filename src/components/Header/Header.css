@@ -31,6 +31,14 @@
   margin-right: 30px;
 }
 
+.header__container > .header__nav > .header__subtitle:active {
+  color: rgb(0, 41, 226);
+}
+
+.header__container > .header__nav > .header__subtitle:hover {
+  color: rgb(109, 132, 236);
+}
+
 /* Media Queries */
 
 @media (max-width: 768px) {
@@ -44,7 +52,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .header__container > .header__title {
     font-size: 1.5rem;
     margin-right: 8px;
@@ -52,5 +60,16 @@
 
   .header__container > .header__nav > .header__subtitle {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .header__container > .header__title {
+    font-size: 1.1rem;
+    margin-right: 6px;
+  }
+
+  .header__container > .header__nav > .header__subtitle {
+    font-size: 0.9rem;
   }
 }

@@ -2,7 +2,7 @@ import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Question from "./components/Question/Question";
-import CreatePoll from "./components/CreatePoll/CreatePoll";
+import CreateQuestion from "./components/CreateQuestion/CreateQuestion";
 import QuestionDetail from "./components/QuestionDetail/QuestionDetail";
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
         <Route exact path="/">
           <Question />
         </Route>
-        <Route exact path="/createpoll">
-          <CreatePoll />
+        <Route exact path="/createquestion">
+          <CreateQuestion />
         </Route>
         <Route path="/questions/:questionId">
           <QuestionDetail />

@@ -12,8 +12,8 @@ const Header = () => {
         <Link className="header__subtitle" to="/">
           Questions
         </Link>
-        <Link className="header__subtitle" to="/createpoll">
-          Create Poll
+        <Link className="header__subtitle" to="/createquestion">
+          Create Question
         </Link>
       </nav>
     </header>

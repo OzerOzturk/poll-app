@@ -15,7 +15,7 @@ const Question = () => {
         const response = await axios.get(
           "https://polls.apiblueprint.org/questions"
         );
-        console.log(response.data);
+        //console.log(response.data);
         setQuestions(response.data);
       } catch (error) {
         console.error(error.message);
